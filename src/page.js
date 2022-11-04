@@ -38,3 +38,39 @@ const questions = [
     },
 
 ];
+
+const engineerQuestions = [
+    {
+        type: 'input',
+        message: "Please enter your engineers name",
+        name: 'engineerName',
+    },
+
+    {
+        type: 'input',
+        message: "Please enter your engineers ID number",
+        name: 'engineerId',
+    },
+
+    {
+        type: 'input',
+        message: "Please enter your engineers email",
+        name: 'engineerEmail',
+    },
+
+    {
+        type: 'input',
+        message: "Please enter your engineers Git Hub username",
+        name: 'engineerGithub',
+    },
+
+    {
+        type: 'list',
+        message: 'Please enter what team member you would like to add',
+        name: 'teamMember',
+        choices: [
+            'Engineer', 'Intern', 'None',
+        ],
+    },
+];
+
