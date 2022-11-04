@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+  .box {
+    box-shadow: 8px 4px 8px 4px teal;
+    background-color: lightblue;
+  }
+  
+  .box:hover {
+    box-shadow: 16px 8px 16px 8px black;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  letter-spacing: 5px;
+}
