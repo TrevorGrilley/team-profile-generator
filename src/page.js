@@ -74,3 +74,33 @@ const engineerQuestions = [
     },
 ];
 
+const internQuestions = [
+    {
+        type: 'input',
+        message: "Please enter your interns name",
+        name: 'internName',
+    },
+    {
+        type: 'input',
+        message: "Please enter your interns ID number",
+        name: 'internId',
+    },
+    {
+        type: 'input',
+        message: "Please enter your interns email",
+        name: 'internEmail',
+    },
+    {
+        type: 'input',
+        message: "Please enter your interns school",
+        name: 'internSchool',
+    },
+    {
+        type: 'list',
+        message: 'Please enter what team member you would like to add',
+        name: 'teamMember',
+        choices: [
+            'Engineer', 'Intern', 'None',
+        ],
+    },
+]
