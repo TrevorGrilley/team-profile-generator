@@ -104,3 +104,49 @@ const internQuestions = [
         ],
     },
 ]
+
+const managerQuestions = [
+    {
+        type: 'input',
+        message: "Please enter your managers name",
+        name: 'managerName',
+    },
+    {
+        type: 'input',
+        message: "Please enter your managers ID number",
+        name: 'managerId',
+    },
+    {
+        type: 'input',
+        message: "Please enter your managers email",
+        name: 'managerEmail',
+    },
+    {
+        type: 'input',
+        message: "Please enter your managers school",
+        name: 'managerSchool',
+    },
+    {
+        type: 'list',
+        message: 'Please enter what team member you would like to add',
+        name: 'teamMember',
+        choices: [
+            'Engineer', 'Intern', 'None',
+        ],
+    },
+]
+
+const writeFile = data => {
+    console.log(data);
+    fs.writeFile('./dist/index.html', data, err => {
+        if(err){
+            console.log(err);
+            return;
+        }
+    })
+}
+
+promptManager()
+.then(promptEmployee)
+.then(teamMembers => generatePage(teamMembers))
+.then(pageHTML => writeFile(pageHTML))
