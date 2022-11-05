@@ -12,7 +12,7 @@ h1 {
 
   .box {
     box-shadow: 10px 5px 10px 5px teal;
-    background-color: lightblue;
+    background-color: whitesmoke;
   }
   
   .box:hover {
