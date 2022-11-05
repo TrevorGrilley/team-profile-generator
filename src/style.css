@@ -11,12 +11,12 @@ h1 {
 }
 
   .box {
-    box-shadow: 8px 4px 8px 4px teal;
+    box-shadow: 10px 5px 10px 5px teal;
     background-color: lightblue;
   }
   
   .box:hover {
-    box-shadow: 16px 8px 16px 8px black;
+    box-shadow: 16px 10px 16px 10px black;
   }
 
   * {
